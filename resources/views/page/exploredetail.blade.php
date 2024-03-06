@@ -52,7 +52,7 @@
                     <div class="w-3/4">
                         <input type="text" name="textkomentar" id="" class="border border-black w-full px-2 py-1 rounded">
                     </div>
-                    <button class="px-4 rounded-full bg-blue-500" onclick="kirimkomentar()"><span class="bi bi-send"></span></button>
+                    <button class="px-4 rounded bg-red-600" onclick="kirimkomentar()"><span class="bi bi-send text-white"></span></button>
                 </div>
             </div>
         </div>

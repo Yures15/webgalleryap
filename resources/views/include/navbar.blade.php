@@ -5,7 +5,7 @@
         <a href="/explore" class="font-fontutama mr-4 px-5 py-1 text-gray-600 rounded shadow-md bg-white hover:bg-gray-400">Beranda</a>
         <a href="/upload" class="font-fontutama mr-4 px-5 py-1 text-gray-600 rounded shadow-md bg-white hover:bg-gray-300">Upload</a>
         <form action="/explore" method="get">
-        <input type="text" class="px-4 py-1 mr-4 rounded" placeholder="Search ..." name="cari">
+        <input type="text" class="px-4 py-1 mr-4 rounded" placeholder="Search ..." name="cari" value="{{ request('cari')}}" >
         </form>
         <a href="/album" class="font-fontutama mr-4 px-5 py-1 text-gray-600 rounded shadow-md bg-white hover:bg-blue-200">Album</a>
         <div class="flex items-center space-x-1 md:order-2 md:space-x-0 rtl:space-x-reverse overflow-hidden">
@@ -23,7 +23,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="/ubahpassword"
                             class="px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 flex justify-center"
                             role="menuitem">
@@ -31,7 +31,7 @@
                                 Change Password
                             </div>
                         </a>
-                    </li>
+                    </li> --}}
                     {{-- <li>
                         <a href="/profil"
                             class="px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 flex justify-center"

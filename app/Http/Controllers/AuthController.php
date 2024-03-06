@@ -21,13 +21,13 @@ class AuthController extends Controller
             'username.required' => 'Username Tidak Boleh Kosong',
             'username.unique' => 'Username Sudah Terpakai',
             'password.required' => 'Username Tidak Boleh Kosong',
-            'password.min' => 'Password Maksimal 6 Digit',
+            'password.min' => 'Password Maksimal 8 Digit',
         ];
 
         $request->validate([
             'username' => 'required|unique:users,username',
             'email' => 'required|unique:users,email',
-            'password' => 'required|min:6',
+            'password' => 'required|min:8',
             'tgl_lahir' => 'required',
         ],$pesan);
         $dataStore = [

@@ -57,7 +57,7 @@
                 <h4 class="font-fontutama mt-3">Password</h4>
                 <input type="password" class="border py-1 rounded-md text-slate-700 p-3" name="password">
                 <button type="submit" class="border font-fontutama py-1 mt-4 text-center text-white rounded bg-red-600">Login</button>
-                <h5 class="mx-auto font-fontutama mt-4 text-xs">Belum punya account, silahkan daftar <a href="register.html" class="text-blue-600">disini.!</a></h5>
+                <h5 class="mx-auto font-fontutama mt-4 text-1xl">Belum punya account, silahkan daftar <a href="/register" class="text-blue-600">disini.!</a></h5>
             </div>
         </form>
         </div>

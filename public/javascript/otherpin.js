@@ -2,7 +2,7 @@ var segmentTerakhir = window.location.href.split("/").pop();
 
 $.getJSON(window.location.origin +'/otherpin/getDataPin/'+segmentTerakhir, function(res){
     console.log(res)
-    $('#namaUser').html(res.dataUser.nama_lengkap)
+    $('#namaUser').html(res.dataUser.username)
     $('#bio').html(res.dataUser.bio)
     $('#imageUser').prop('src', '/assets/'+res.dataUser.avatar)
 })
@@ -44,7 +44,7 @@ function loadMoreData(paginate){
                     judul: x.judul_foto,
                     deskripsi: x.deskripsi_foto,
                     foto: x.url,
-                    tanggal: x.created_at,
+                    tanggal: moment(x.created_at).format('DD/MM/YYYY'),
                     jml_komentar: x.komentars_count,
                     jml_like: x.likes_count,
                     idUserLike: userlike,

@@ -93,10 +93,10 @@
                     <small class="italic text-red-800">{{$message}}</small>
                 @enderror
                 <h4 class="font-fontutama mt-3">Tanggal Lahir</h4>
-                <input type="date" class="border py-1 rounded-md text-slate-700" name="tgl_lahir">
+                <input  type="date" class="border py-1 rounded-md text-slate-700" name="tgl_lahir">
                 <button type="submit" class="py-1 font-fontutama mt-4 text-white rounded bg-red-600">Register</button>
             </form>
-                <h5 class="mx-auto mt-4 text-xs">Already a member? <a href="login.html" class="text-blue-600">Log in</a></h5>
+                <h5 class="mx-auto mt-4 font-fontutama text-1xl">Registerasi Berhasil ? <a href="/login" class="font-fontutama font-semibold text-blue-600">Log in</a></h5>
             </div>
         </div>
     </section>

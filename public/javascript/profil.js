@@ -85,7 +85,7 @@ const getExplore =()=>{
                             <span class="bi bi-chat-left-text"></span>
                             <small>${x.jml_like}</small>
                             <span class="bi ${x.idUserLike === x.useractive ? 'bi-heart-fill text-red-800': 'bi-heart'}" onclick="likes(this, ${x.id})"></span>
-                            <a href="/edit/${x.id}" class="bg-gray-300 px-1 rounded-md"><span class="bi bi-pencil-square"></span></a>
+                            <a href="/edit/${x.id}" onclick="return confirm('Apakah Anda yakin ingin Mengedit Foto ini?')" class="bg-gray-300 px-1 rounded-md"><span class="bi bi-pencil-square"></span></a>
                             <a href="/hapus/${x.id}" onclick="return confirm('Apakah Anda yakin ingin menghapus Foto ini?')" class="text-red-600 px-1 rounded-md"><span class="bi bi-trash3"></span></a>
                         </div>
                     </div>

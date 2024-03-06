@@ -11,11 +11,11 @@
                 @csrf
                 <div class="mb-4">
                     <label class="font-fontdua block text-sm font-semibold text-gray-600">Judul Foto:</label>
-                    <input type="text" name="judul_baru" id="" class="border border-gray-300 focus:outline-none focus:border-blue-500 rounded-md w-full px-4 py-2" placeholder="Enter album name">
+                    <input type="text" name="judul_baru" id="" class="border border-gray-300 focus:outline-none focus:border-blue-500 rounded-md w-full px-4 py-2" placeholder="Enter judul foto baru">
                 </div>
                 <div class="mb-4">
                     <label class="font-fontdua block text-sm font-semibold text-gray-600">Description:</label>
-                    <textarea name="deskripsi_baru" id="" rows="4" class="border border-gray-300 focus:outline-none focus:border-blue-500 rounded-md w-full px-4 py-2" placeholder="Enter album description"></textarea>
+                    <textarea name="deskripsi_baru" id="" rows="4" class="border border-gray-300 focus:outline-none focus:border-blue-500 rounded-md w-full px-4 py-2" placeholder="Enter description foto baru"></textarea>
                 </div>
                 <h3 class="mt-2 font-fontutama">Select Album</h3>
                 <select type="text" name="album" id="" class="border font-fontutama py-2 rounded border-slate-500">
@@ -25,7 +25,8 @@
                     @endforeach
                 </select>
                 <div class="mt-6 flex justify-center">
-                    <button type="submit" class="font-fontutama px-4 py-2 bg-pink-400 text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-blue-600">Perbaharui</button>
+                    <button type="submit" class="font-fontutama mr-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-blue-600">Perbaharui</button>
+                    <a href="/mypinprofil" class="font-fontutama px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-blue-600">Back Profil</a>
                 </div>
             </form>
         </div>

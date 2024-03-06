@@ -26,7 +26,7 @@
         }
     </style>
     @stack('cssjsexternal')
-    <title>RyuKyu</title>
+    <title>RyuKyu Gallery</title>
 </head>
 
 <body>
